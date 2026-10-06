@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="property1.css">
+
+    <title>Modern Luxury Residence | Sunville Group</title>
+</head>
+
+<body>
+<header class="property-header">
+    <a href="index.html">
+        <img src="logo.png" alt="Sunville Group">
+    </a>
+
+    <nav>
+        <button class="property-menu-toggle" type="button">
+            <i class='bx bx-menu'></i>
+        </button>
+
+        <div class="property-nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#properties">Properties</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="property-hero">
+
+        <div class="property-image">
+            <img src="1stcardimg.png" alt="Modern Luxury Residence">
+        </div>
+
+        <div class="property-content">
+            <p class="property-label">FEATURED PROPERTY</p>
+
+            <h1>Modern Luxury Residence</h1>
+
+            <p class="property-location">
+                <i class='bx bx-map'></i>
+                PORT HARCOURT, Nigeria
+            </p>
+
+            <p class="property-description">
+                A beautifully designed modern residence created
+                for comfortable and stylish living.
+            </p>
+
+            <div class="property-details">
+                <div>
+                    <i class='bx bx-bed'></i>
+                    <span>4 Beds</span>
+                </div>
+
+                <div>
+                    <i class='bx bx-bath'></i>
+                    <span>4 Baths</span>
+                </div>
+
+                <div>
+                    <i class='bx bx-area'></i>
+                    <span>450 sqm</span>
+                </div>
+            </div>
+
+            <a href="index.html#contact" class="property-btn">
+                Contact Us
+            </a>
+        </div>
+
+    </section>
+    <section class="property-overview">
+    <div class="overview-heading">
+        <p>PROPERTY OVERVIEW</p>
+        <h2>Everything You Need to Know</h2>
+    </div>
+
+    <div class="overview-grid">
+
+        <div class="overview-card">
+            <i class='bx bx-building-house'></i>
+            <h3>Property Type</h3>
+            <p>Luxury Residence</p>
+        </div>
+
+        <div class="overview-card">
+            <i class='bx bx-map'></i>
+            <h3>Location</h3>
+            <p>PORT HARCOURT, Nigeria</p>
+        </div>
+
+        <div class="overview-card">
+            <i class='bx bx-check-circle'></i>
+            <h3>Status</h3>
+            <p>Available</p>
+        </div>
+
+    </div>
+</section>
+<section class="property-description-section">
+    <div class="description-content">
+        <p>ABOUT THE PROPERTY</p>
+        <h2>Designed for Modern Living</h2>
+
+        <span>
+            This modern luxury residence combines contemporary design,
+            comfortable living spaces, and thoughtful details. Every part
+            of the home has been designed to create a beautiful and
+            practical living experience.
+        </span>
+    </div>
+
+    <div class="description-image">
+        <img src="4thcardimg.png" alt="Interior of a modern residence">
+    </div>
+</section>
+<section class="property-features">
+    <div class="features-heading">
+        <p>PROPERTY FEATURES</p>
+        <h2>Everything You Need</h2>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-item">
+            <i class='bx bx-car'></i>
+            <h3>Private Parking</h3>
+            <p>Secure parking space for residents and guests.</p>
+        </div>
+
+        <div class="feature-item">
+            <i class='bx bx-home-alt'></i>
+            <h3>Spacious Living</h3>
+            <p>Comfortable spaces designed for modern family living.</p>
+        </div>
+
+        <div class="feature-item">
+            <i class='bx bx-shield-quarter'></i>
+            <h3>Secure Environment</h3>
+            <p>A thoughtfully planned environment for comfortable living.</p>
+        </div>
+
+        <div class="feature-item">
+            <i class='bx bx-leaf'></i>
+            <h3>Beautiful Outdoor Space</h3>
+            <p>Well-designed outdoor areas for relaxation and enjoyment.</p>
+        </div>
+    </div>
+</section>
+<section class="property-cta">
+    <div class="property-cta-content">
+        <p>INTERESTED IN THIS PROPERTY?</p>
+        <h2>Make This Your Next Home</h2>
+        <span>
+            Get in touch with our team to learn more about this property
+            or arrange a viewing.
+        </span>
+        <a href="index.html#contact">Contact Us</a>
+    </div>
+</section>
+</main>
+<script>
+const menuToggle = document.querySelector(".property-menu-toggle");
+const navLinks = document.querySelector(".property-nav-links");
+const menuIcon = menuToggle.querySelector("i");
+
+menuToggle.addEventListener("click", function() {
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+        menuIcon.classList.replace("bx-menu", "bx-x");
+    } else {
+        menuIcon.classList.replace("bx-x", "bx-menu");
+    }
+});
+</script>
+</body>
+</html>
